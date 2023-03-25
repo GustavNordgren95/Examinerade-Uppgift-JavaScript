@@ -1,0 +1,151 @@
+@import "https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap";
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Gochi Hand";
+}
+
+div {
+  padding: 4mm;
+}
+
+.val {
+  color: rgb(82, 40, 16);
+  border-color: rgb(82, 40, 16);
+}
+
+.svärd {
+  position:relative;
+}
+
+#svärdwrapper {
+  display: inline-block;
+  transition: height 2s;
+  
+}
+
+.knapprad {
+  max-width: 200px;
+  left:50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position:absolute;
+  padding: 5mm;
+  border-style: solid;
+  border-color: rgba(165, 42, 42, 0.233);
+  background-color: rgba(202, 177, 177, 0.842);
+}
+
+.test {
+  max-width: 200px;
+}
+
+.lista > img {
+  padding: 10px;
+
+}
+
+#svärdbild {
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 300px;
+  height: auto;
+}
+
+img {
+  border: 2mm ridge brown;
+}
+
+div.resultat div section img {
+  max-width: 100px;
+  border: 1mm ridge brown;
+}
+
+img.small {
+  max-width: 200px;
+  max-height: 200px;
+  border: none;
+}
+
+.synlig {
+  visibility: visible;
+}
+
+.osynlig {
+  visibility: hidden;
+}
+
+footer {
+  opacity: 0.5;
+}
+
+#footer::before {
+  content: "⚔️";
+}
+
+#footer::after {
+  content: "⚔️";
+}
+
+.overlay  {
+  text-align: center;
+  position: fixed;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.418); /* Black background with opacity */
+  z-index: 2;
+}
+
+.overlay > div {
+  animation: zoom-in-zoom-out 1s ease-out infinite;
+  position: fixed;
+  left:25%;
+  top:50%;
+  color: darkgoldenrod;
+  background-color: rgba(0, 0, 0, 0.808);
+  border-style: dashed;
+
+}
+
+.svar {
+  text-align: center;
+  position: fixed;
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.418); 
+  z-index: 2;
+}
+
+.svar > div {
+  text-align: center; 
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.808);
+  border-style: solid;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
